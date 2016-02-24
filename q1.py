@@ -3,6 +3,12 @@
 #   Example 2: if your balance is 600, then your program should return 12.6. 
 #   Example 3: if your balance is 25, then your program should return 10. 
 #   Example 4: if your balance is 8, then your program should return 8. 
-
+# Nicholas Ivey 2/24/16
 def computeMinimumPayment( balance ):
     #TODO write code inside this function that achieves the functionality described above
+    if (balance*0.021 > 10):
+    	return balance*0.021
+    elif (balance<10):
+    	return balance
+    else:
+    	return 10
